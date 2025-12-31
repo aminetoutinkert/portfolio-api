@@ -11,7 +11,7 @@ exports.createProject = async (req, res) => {
     }
 };
 
-// modifier un projet
+
 exports.updateProject = async (req, res) => {
     try {
         const { id } = req.params;
@@ -27,7 +27,7 @@ exports.updateProject = async (req, res) => {
     }
 };
 
-// supprimer un projet
+
 exports.deleteProject = async (req, res) => {
     try {
         const { id } = req.params;
@@ -38,7 +38,7 @@ exports.deleteProject = async (req, res) => {
     }
 };
 
-// lire tous les projets
+
 exports.getAllProjects = async (req, res) => {
     try {
         const projects = await project.find();

@@ -1,6 +1,5 @@
 const contact = require('../models/contact');
 
-// Create a new contact message
 exports.createContactMessage = async (req, res) => {
     try {
         const { name, email, message } = req.body;
@@ -11,7 +10,7 @@ exports.createContactMessage = async (req, res) => {
         res.status(500).json({ message: error.message });
     }
 };
-// Get all contact messages
+
 exports.getAllContactMessages = async (req, res) => {
     try {
         const contacts = await contact.find();
