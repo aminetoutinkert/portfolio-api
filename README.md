@@ -1,5 +1,9 @@
 ## Routes for postman testing 
 
+# SCREENSHOT
+# ![Screenshot](./profileapi.png)
+
+
 # ** Middleware **
 
 # ** /users/ap  : user's Route ** 
