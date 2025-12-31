@@ -12,7 +12,7 @@ app.use('/users/api', userRoute)
 app.use('/skills/api', skillRoute)
 app.use('/projects/api', projectRoute)
 app.use('/contacts/api', contactRoute)
-// http://localhost:5000/users/api for postman + appropriate route for each model
+
 mongoose.connect('mongodb://localhost:27017/portfolioapi').then((result) => {
     console.log('connected to database')
     app.listen(5000, () => {
