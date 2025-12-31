@@ -1,7 +1,7 @@
 const user = require('../models/user');
 
 
-// Create a new user
+
 exports.createUser = async (req, res) => {
     try {
         const { name, about, status, phone, email, githublink, linkedinlink } = req.body;
@@ -12,7 +12,6 @@ exports.createUser = async (req, res) => {
         res.status(500).json({ message: error.message });
     }
 };
-// Update a user
 exports.updateUser = async (req, res) => {
     try {
         const { id } = req.params;
@@ -28,7 +27,6 @@ exports.updateUser = async (req, res) => {
     }
 };
 
-// Get all users
 exports.getAllUsers = async (req, res) => {
     try {
         const users = await user.find();
